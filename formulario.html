@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="pagestyle" rel="stylesheet" href="styles.css">
+    <title>Formulario de Reserva de Hotel</title>
+    <script src="actividad4B.js"></script>
+</head>
+<body>
+    <div style="border: 1px solid #ccc; padding: 20px; width: 600px; margin: 0 auto;">
+        <h2>Formulario de Reserva de Hotel</h2>
+
+        <div>
+            <button onclick="changeStyleSheet('styles.css')">Diseño Estándar</button>
+            <button onclick="changeStyleSheet('actividad4B_standard.css')">Diseño Accesible</button>
+        </div>
+        <form>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="repetir_contrasena">Repetir Contraseña:</label>
+                    <input type="password" id="repetir_contrasena" name="repetir_contrasena">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="num_huespedes">Número de Huéspedes:</label>
+                    <input type="number" id="num_huespedes" name="num_huespedes">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <br>
+                <li>
+                    <label>Servicios:</label>
+                    <a href="detalles.html">Justificación</a>
+                    <br>
+                    <input type="checkbox" id="aire_acondicionado" name="servicios" value="aire_acondicionado">
+                    <label for="aire_acondicionado">Aire Acondicionado</label><br>
+                    <input type="checkbox" id="caja_fuerte" name="servicios" value="caja_fuerte">
+                    <label for="caja_fuerte">Caja Fuerte</label><br>
+                    <input type="checkbox" id="minibar" name="servicios" value="minibar">
+                    <label for="minibar">Minibar</label><br>
+                    <input type="checkbox" id="conexion_internet" name="servicios" value="conexion_internet">
+                    <label for="conexion_internet">Conexión a Internet</label><br>
+                    <input type="checkbox" id="almohadas_cara" name="servicios" value="almohadas_cara">
+                    <label for="almohadas_cara">Almohadas a la Cara</label><br>
+                    <input type="checkbox" id="detector_humos" name="servicios" value="detector_humos">
+                    <label for="detector_humos">Detector de Humos</label><br>
+                    <input type="checkbox" id="mesa_trabajo" name="servicios" value="mesa_trabajo">
+                    <label for="mesa_trabajo">Mesa de Trabajo</label><br>
+                    <input type="checkbox" id="wifi" name="servicios" value="wifi">
+                    <label for="wifi">WiFi</label><br>
+                </li>
+                <br>
+                <li>
+                    <label>Tipo de Habitación:</label>
+                    <a href="detalles.html">Justificación</a>
+                    <br>
+                    <input type="checkbox" id="individual" name="tipo_habitacion" value="individual">
+                    <label for="individual">Individual</label><br>
+                    <input type="checkbox" id="doble" name="tipo_habitacion" value="doble">
+                    <label for="doble">Doble</label><br>
+                    <input type="checkbox" id="suite" name="tipo_habitacion" value="suite">
+                    <label for="suite">Suite</label><br>
+                </li>
+                <br>
+                <li>
+                    <label>Pensión:</label>
+                    <a href="detalles.html">Justificación</a>
+                    <br>
+                    <input type="checkbox" id="alojamiento" name="alojamiento" value="alojamiento">
+                    <label for="alojamiento">Alojamiento</label><br>
+                    <input type="checkbox" id="desayuno" name="desayuno" value="desayuno">
+                    <label for="desayuno">Desayuno</label><br>
+                    <input type="checkbox" id="media" name="media" value="media">
+                    <label for="media">Media Pensión</label><br>
+                    <input type="checkbox" id="completa" name="completa" value="completa">
+                    <label for="completa">Pensión Completa</label><br>
+                </li>
+                <li>
+                    <label for="comentarios">Comentarios o Sugerencias:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <label for="email">E-mail de Contacto:</label>
+                    <input type="email" id="email" name="email">
+                    <a href="detalles.html">Justificación</a>
+                </li>
+                <li>
+                    <input type="checkbox" id="politica_privacidad" name="politica_privacidad" value="acepto">
+                    <label for="politica_privacidad">Acepto la Política de Privacidad</label><br>
+                    <a href="detalles.html">Justificación</a>
+                </li>
+            </ul>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </div>
+</body>
+</html>
